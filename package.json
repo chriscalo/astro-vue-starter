@@ -17,5 +17,8 @@
   "homepage": "https://github.com/chriscalo/astro-vue-starter#readme",
   "dependencies": {
     "astro": "^0.24.3"
+  },
+  "devDependencies": {
+    "sass": "^1.49.9"
   }
 }
