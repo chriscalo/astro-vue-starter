@@ -1,4 +1,6 @@
 ---
+import Counter from "../components/Counter.vue";
+
 // Welcome to Astro! Everything between these "---" code fences
 // is your "component front matter". It never runs in the browser.
 console.log("This runs in your terminal, not the browser!");
@@ -15,12 +17,10 @@ async function getName() {
 }
 ---
 
-<html>
-  <head></head>
-  <body>
-    <h1>Hello, {name}!</h1>
-  </body>
-</html>
+<title>Astro Starter</title>
+
+<h1>Hello, {name}!</h1>
+<Counter client:load />
 
 <!-- Sass!! -->
 <style lang="scss">

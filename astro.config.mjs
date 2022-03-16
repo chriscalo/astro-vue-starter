@@ -2,5 +2,7 @@
 // https://docs.astro.build/reference/configuration-reference
 
 export default {
-  renderers: [],
+  renderers: [
+    "@astrojs/renderer-vue",
+  ],
 };
