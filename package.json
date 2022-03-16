@@ -1,6 +1,11 @@
 {
   "name": "astro-vue-starter",
   "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chriscalo/astro-vue-starter.git"
@@ -9,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/chriscalo/astro-vue-starter/issues"
   },
-  "homepage": "https://github.com/chriscalo/astro-vue-starter#readme"
+  "homepage": "https://github.com/chriscalo/astro-vue-starter#readme",
+  "dependencies": {
+    "astro": "^0.24.3"
+  }
 }
