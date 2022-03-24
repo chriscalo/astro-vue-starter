@@ -1,6 +1,9 @@
 {
   "name": "astro-vue-starter",
   "version": "0.1.0",
+  "workspaces": [
+    "api"
+  ],
   "scripts": {
     "start": "astro dev",
     "build": "astro build",
