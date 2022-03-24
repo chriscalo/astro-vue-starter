@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/chriscalo/astro-vue-starter#readme",
   "dependencies": {
-    "~": "file:.",
     "@astrojs/renderer-vue": "^0.4.0",
-    "astro": "^0.24.3"
+    "~": "file:.",
+    "2-thenable": "^1.0.0",
+    "astro": "^0.24.3",
+    "kill-port": "^1.6.1",
+    "portfinder": "^1.0.28"
   },
   "devDependencies": {
     "sass": "^1.49.9"
