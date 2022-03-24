@@ -18,7 +18,7 @@ server.use(apiMiddleware());
   const { url } = await listen(server, port); 
   console.log(
     chalk`${ chalk.bold.inverse.green(" Application ") } server running:`,
-    chalk.yellow.bold(url),
+    chalk.green.bold(url),
   );
 })();
 
