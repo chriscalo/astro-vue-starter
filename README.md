@@ -5,7 +5,7 @@ This starter includes the following components:
 - express server
 - basic logging middleware
 - API middleware with hot reloading (see [/api](./api) directory)
-- proxied Astro UI with Vue 3
+- proxied Astro UI with Vue 3 (with HMR in dev and fully static in production)
 
 ## Get started
 
