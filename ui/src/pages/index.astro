@@ -1,6 +1,7 @@
 ---
+import HtmlDocument from "../components/HtmlDocument.astro";
 import Counter from "../components/Counter.vue";
-import { Debug } from 'astro/components';
+import { Debug } from "astro/components";
 
 // Welcome to Astro! Everything between these "---" code fences
 // is your "component front matter". It never runs in the browser.
@@ -17,16 +18,23 @@ async function getName() {
   })
 }
 ---
+<HtmlDocument title="Astro Starter">
+  <h1>Hello, {name}!</h1>
+  
+  <h2>Vue component</h2>
+  <Counter client:load />
+  
+  <h2>Integrated API!</h2>
+  <ul>
+    <li><a href="/api">/api</a></li>
+    <li><a href="/api/foo">/api/foo</a></li>
+  </ul>
+  
+  <Debug {Astro} />
+</HtmlDocument>
 
-<title>Astro Starter</title>
-
-<h1>Hello, {name}!</h1>
-<Counter client:load />
-
-<Debug {Astro} />
-
-<!-- Sass!! -->
 <style lang="scss">
+  // Sass!!
   $color: magenta;
   
   h1 {

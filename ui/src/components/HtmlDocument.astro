@@ -1,0 +1,32 @@
+---
+const cssClass = Astro.props["class"] || "";
+const title = Astro.props["title"] || "";
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class={cssClass}>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="application-name" content="Codebin"/>
+    <meta
+      name="viewport"
+      content="
+        width=device-width,
+        height=device-height,
+        viewport-fit=cover,
+        initial-scale=1,
+        maximum-scale=1,
+        minimum-scale=1,
+        user-scalable=no
+      "
+    />
+    
+    <title>{title}</title>
+    <slot name="head"/>
+  </head>
+  <body>
+    <slot/>
+  </body>
+</html>
